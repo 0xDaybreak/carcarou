@@ -1,0 +1,16 @@
+.context-holder {
+    width: 100%;
+}
+
+.image-slider-container {
+    position: relative;
+}
+.arrow-buttons-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
