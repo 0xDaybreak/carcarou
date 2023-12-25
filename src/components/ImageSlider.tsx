@@ -1,40 +1,63 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Button from '@mui/material/Button';
 import ArrowBackIcon from "@mui/icons-material/ArrowBack"
 import './ImageSlider.css';
+
+interface Car {
+    id: string,
+    make: string,
+    model: string,
+    year: number,
+    color_id: number,
+    image_id: number,
+}
 interface Image {
-    url: string;
+    image_id: number;
+    url: string[];
 }
 
-interface ImageSliderProps {
-    images: Image[]
-}
-
-const ImageSlider: React.FC<ImageSliderProps> = (props: ImageSliderProps) => {
-    const [counter, setCounter]: [number, React.Dispatch<React.SetStateAction<number>>] = useState(1)
+const ImageSlider = () => {
+    const [counter, setCounter]: [number, React.Dispatch<React.SetStateAction<number>>] = useState(0)
+    const [image, setImage]: [Image, React.Dispatch<React.SetStateAction<Image>>] = useState({
+        image_id: 0,
+        url: ['www.error.com'],
+    });
     const handleOnRightClick = () => {
         console.log(counter)
-        if (counter == 9) {
-            setCounter(prevCounter => prevCounter - 8)
+        if (counter == 11) {
+            setCounter(prevCounter => prevCounter - 11)
             console.log(counter)
         }
-        else if(counter < 9) {
+        else if(counter < 11) {
             setCounter(prevCounter => prevCounter + 1)
             console.log(counter)
         }
     }
     const handleOnLeftClick = () => {
-        if(counter == 1) {
-            setCounter(prevCounter => prevCounter + 8)
-        } else if (counter < 10) {
+        if(counter == 0) {
+            setCounter(prevCounter => prevCounter + 11)
+        } else if (counter < 12) {
             setCounter(prevCounter => prevCounter - 1)
         }
         console.log(counter)
     }
+
+    useEffect(() => {
+        fetch("http://127.0.0.1:7070/cars", {
+            method: "GET",
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                setImage(data[0][1]);
+                console.log(data);
+
+            })
+            .catch((error) => console.log(error));
+    }, []);
     return (
-        props.images.length > 0 ? (
+        image.url.length > 0 ? (
             <div className="image-slider-container"  >
-                <img src={props.images[counter].url} alt="new" className="context-holder"/>
+                <img src={image.url[counter]} alt="new" className="context-holder"/>
                 <div className={"arrow-buttons-container"}>
                     <Button className={"arrow-buttons"} variant="text" onClick={handleOnLeftClick}>
                         <ArrowBackIcon />

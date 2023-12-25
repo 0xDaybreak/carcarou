@@ -11,7 +11,7 @@ function App() {
   }
   console.log(images)
   return (
-        <ImageSlider images={images}/>
+        <ImageSlider/>
   );
 }
 
