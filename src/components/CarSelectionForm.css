@@ -1,0 +1,19 @@
+.car-brands-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car-brand-logo {
+    width: 150px;
+    height: 110px;
+    margin: 5px;
+    background-size: cover;
+}
+
+.car-selection_form {
+    text-align: center;
+    justify-content: center;
+    padding-top: 5rem;
+    align-items: center;
+}
+

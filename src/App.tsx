@@ -1,17 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 import ImageSlider from "./components/ImageSlider";
+import SplashScreen from "./components/SplashScreen";
+import CarSelectionForm from "./components/CarSelectionForm";
 
 function App() {
-  let images: [{url:string}] = [{url:""}]
-  for(let i = 1; i <= 9; i++) {
-    let url = "https://cdn.nwi-ms.com/media/ro/V/mc/RC814J24/model/0" + i + ".jpg?F=0Q0Q&P=VM&M=$TA@8G1@PCG&size=XL"
-    images.push({url:url})
-  }
-  console.log(images)
+  const [isUploaded, setIsUploaded] = useState(false);
+  const handleUpload = (file: File) => {
+    console.log('Uploaded file:', file);
+  };
   return (
-        <ImageSlider/>
+      <div className={"form-container"}>
+        <CarSelectionForm/>
+      </div>
   );
 }
 

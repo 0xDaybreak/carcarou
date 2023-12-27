@@ -1,0 +1,20 @@
+.carlogos-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    align-items: center;
+}
+
+.carlogos {
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carlogos:hover {
+    opacity: 1;
+}
+
+.carlogos.selected {
+    opacity: 1;
+}

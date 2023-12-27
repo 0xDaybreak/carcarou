@@ -20,7 +20,7 @@ const ImageSlider = () => {
     const [counter, setCounter]: [number, React.Dispatch<React.SetStateAction<number>>] = useState(0)
     const [image, setImage]: [Image, React.Dispatch<React.SetStateAction<Image>>] = useState({
         image_id: 0,
-        url: ['www.error.com'],
+        url: ['error'],
     });
     const handleOnRightClick = () => {
         console.log(counter)
@@ -43,7 +43,7 @@ const ImageSlider = () => {
     }
 
     useEffect(() => {
-        fetch("http://127.0.0.1:7070/cars", {
+        fetch("http://127.0.0.1:7070/cars?make=Volkswagen&model=Touareg&year=2023", {
             method: "GET",
         })
             .then((response) => response.json())
