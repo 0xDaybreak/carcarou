@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="Components and UI change">
+      <change afterPath="$PROJECT_DIR$/src/images/model/golfside.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/model/touaregside.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CarLogos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarLogos.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CarModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarModel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CarSelectionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarSelectionForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Nissan.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/Nissan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Toyota.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/Toyota.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Volkswagen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/Volkswagen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/audi.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/audi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/caddy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/caddy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/chevy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/chevy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/ford.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/ford.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/honda.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/honda.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/hunday.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/hunday.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/lexus.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/lexus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/skoda.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/make/skoda.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +65,8 @@
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\model" />
+      <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\make" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\resources" />
     </key>
@@ -65,7 +81,8 @@
       <updated>1703609156696</updated>
       <workItem from="1703609161323" duration="2483000" />
       <workItem from="1703675922348" duration="6648000" />
-      <workItem from="1703687814964" duration="6447000" />
+      <workItem from="1703687814964" duration="6704000" />
+      <workItem from="1703756495493" duration="3639000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -74,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703692819566</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Components and UI change">
+      <created>1703694357598</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703694357598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
