@@ -39,7 +39,7 @@ const CarSelectionForm = () => {
 
     return (
         <div className={"car-selection_form"}>
-            <h1>Please choose the make of the car you would like to configure the paint job for</h1>
+            <h1>Please select a Logo in order to begin configuration</h1>
             <CarLogos images={loadedMakes} onLogoClick={handleLogoClick}/>
             <CarModel modelsMap={carModelsMap} modelToShow={modelToShow}/>
         </div>

@@ -1,0 +1,13 @@
+.carmodels {
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opcaity 0.3s ease-in-out;
+}
+
+.carmodels:hover {
+    opacity: 1;
+}
+
+.carmodels.selected {
+    opacity: 1;
+}
