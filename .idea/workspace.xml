@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="Added react-router-dom and small bug fix">
-      <change afterPath="$PROJECT_DIR$/src/images/model/camryside.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/model/xtrailside.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CarModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarModel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CarSelectionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarSelectionForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,21 +32,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Daybreak/Desktop/frontend/carcarousel/src/images&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Daybreak\\Desktop\\frontend\\carcarousel\\node_modules\\typescript\\lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Daybreak/Desktop/frontend/carcarousel/src/images",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\Daybreak\\Desktop\\frontend\\carcarousel\\node_modules\\typescript\\lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images" />
@@ -76,7 +72,7 @@
       <workItem from="1703687814964" duration="6704000" />
       <workItem from="1703756495493" duration="4507000" />
       <workItem from="1703774109343" duration="2958000" />
-      <workItem from="1703934814344" duration="6024000" />
+      <workItem from="1703934814344" duration="7598000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -106,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703776023006</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added react-router-dom and small bug fix">
+      <created>1703943861584</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703943861584</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

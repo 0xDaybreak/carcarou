@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Button from '@mui/material/Button';
-import ArrowBackIcon from "@mui/icons-material/ArrowBack"
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import {ColorResult, SketchPicker} from "react-color";
 import './ImageSlider.css';
 import {useLocation} from "react-router-dom";
 
@@ -23,23 +24,18 @@ const ImageSlider = () => {
     const year = queryParams.get('year');
 
     const handleOnRightClick = () => {
-        console.log(counter)
         if (counter == 11) {
             setCounter(prevCounter => prevCounter - 11)
-            console.log(counter)
-        }
-        else if(counter < 11) {
+        } else if (counter < 11) {
             setCounter(prevCounter => prevCounter + 1)
-            console.log(counter)
         }
     }
     const handleOnLeftClick = () => {
-        if(counter == 0) {
+        if (counter == 0) {
             setCounter(prevCounter => prevCounter + 11)
         } else if (counter < 12) {
             setCounter(prevCounter => prevCounter - 1)
         }
-        console.log(counter)
     }
 
     useEffect(() => {
@@ -54,16 +50,27 @@ const ImageSlider = () => {
             })
             .catch((error) => console.log(error));
     }, [make, model, year]);
+    const [currentColor, setCurrentColor] = useState<string>("#ff6")
+    const handleOnChange = (color: ColorResult) => {
+        setCurrentColor(color.hex)
+        console.log(color.hex)
+    }
     return (
         image.url.length > 0 ? (
-            <div className="image-slider-container"  >
+            <div className="image-slider-container">
+                <SketchPicker
+                    className={"sketchpicker"}
+                    color={currentColor}
+                    onChangeComplete={handleOnChange}
+                    disableAlpha={true}
+                />
                 <img src={image.url[counter]} alt="new" className="context-holder"/>
                 <div className={"arrow-buttons-container"}>
                     <Button className={"arrow-buttons"} variant="text" onClick={handleOnLeftClick}>
-                        <ArrowBackIcon />
+                        <ArrowBackIcon/>
                     </Button>
                     <Button className={"arrow-buttons"} variant="text" onClick={handleOnRightClick}>
-                        <ArrowBackIcon style={{ transform: "rotate(180deg)"}}/>
+                        <ArrowBackIcon style={{transform: "rotate(180deg)"}}/>
                     </Button>
                 </div>
             </div>
