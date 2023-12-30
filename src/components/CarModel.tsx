@@ -8,6 +8,7 @@ import './CarModel.css'
 interface CarModelProps {
     modelsMap: Map<string, string[]>;
     modelToShow: string;
+    onButtonShow: (model:string) => void;
 }
 
 const CarModel: React.FC<CarModelProps> = (props) => {
@@ -26,9 +27,10 @@ const CarModel: React.FC<CarModelProps> = (props) => {
         }
         return "no image"
     }
+
     const handleOnClick = (model: string) => {
         setSelectedModel(model);
-        console.log(selectedModel)
+        props.onButtonShow(model);
     }
 
     return (

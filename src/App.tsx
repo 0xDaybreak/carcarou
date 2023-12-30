@@ -1,18 +1,19 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import ImageSlider from "./components/ImageSlider";
-import SplashScreen from "./components/SplashScreen";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import CarSelectionForm from "./components/CarSelectionForm";
+import ImageSlider from "./components/ImageSlider";
 
 function App() {
-  const [isUploaded, setIsUploaded] = useState(false);
-  const handleUpload = (file: File) => {
-    console.log('Uploaded file:', file);
-  };
   return (
-      <div className={"form-container"}>
-        <CarSelectionForm/>
-      </div>
+      <Router>
+          <div className="form-container">
+              <Routes>
+                  <Route path="/cars" element={<CarSelectionForm />} />
+                  <Route path="/cars/visualize/" element={<ImageSlider/>} />
+              </Routes>
+          </div>
+      </Router>
   );
 }
 

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="models now display dynamically">
-      <change afterPath="$PROJECT_DIR$/src/components/CarModel.css" afterDir="false" />
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="Added react-router-dom and small bug fix">
+      <change afterPath="$PROJECT_DIR$/src/images/model/camryside.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/model/xtrailside.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CarModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarModel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CarSelectionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarSelectionForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/model/golfside.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/model/golfside.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/model/touaregside.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/model/touaregside.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +75,8 @@
       <workItem from="1703675922348" duration="6648000" />
       <workItem from="1703687814964" duration="6704000" />
       <workItem from="1703756495493" duration="4507000" />
-      <workItem from="1703774109343" duration="1863000" />
+      <workItem from="1703774109343" duration="2958000" />
+      <workItem from="1703934814344" duration="6024000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -95,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703760207922</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="small ui changes">
+      <created>1703776023006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703776023006</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +126,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Components and UI change" />
     <MESSAGE value="models now display dynamically" />
-    <option name="LAST_COMMIT_MESSAGE" value="models now display dynamically" />
+    <MESSAGE value="small ui changes" />
+    <MESSAGE value="Added react-router-dom and small bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added react-router-dom and small bug fix" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
