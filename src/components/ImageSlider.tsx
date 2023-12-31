@@ -4,6 +4,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import {ColorResult, SketchPicker} from "react-color";
 import './ImageSlider.css';
 import {useLocation} from "react-router-dom";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 
 interface Image {
@@ -58,12 +59,16 @@ const ImageSlider = () => {
     return (
         image.url.length > 0 ? (
             <div className="image-slider-container">
-                <SketchPicker
-                    className={"sketchpicker"}
-                    color={currentColor}
-                    onChangeComplete={handleOnChange}
-                    disableAlpha={true}
-                />
+                <div className={"sketchpicker"}>
+                    <SketchPicker
+                        color={currentColor}
+                        onChangeComplete={handleOnChange}
+                        disableAlpha={true}
+                    />
+                    <Button color ="info" variant={"contained"} endIcon=<ArrowForwardIosIcon/> className={"confirm-color-btn"}>
+                        Confirm Color
+                    </Button>
+                </div>
                 <img src={image.url[counter]} alt="new" className="context-holder"/>
                 <div className={"arrow-buttons-container"}>
                     <Button className={"arrow-buttons"} variant="text" onClick={handleOnLeftClick}>
