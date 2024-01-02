@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="added color-picker">
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="small ui change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.tsx" afterDir="false" />
@@ -51,6 +51,7 @@
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\mascot" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\model" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\make" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images" />
@@ -72,7 +73,8 @@
       <workItem from="1703774109343" duration="2958000" />
       <workItem from="1703934814344" duration="10996000" />
       <workItem from="1703953604207" duration="1797000" />
-      <workItem from="1704020133569" duration="1190000" />
+      <workItem from="1704020133569" duration="3153000" />
+      <workItem from="1704196457420" duration="4695000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -123,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703946696387</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="small ui change">
+      <created>1704029425317</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704029425317</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +155,8 @@
     <MESSAGE value="small ui changes" />
     <MESSAGE value="Added react-router-dom and small bug fix" />
     <MESSAGE value="added color-picker" />
-    <option name="LAST_COMMIT_MESSAGE" value="added color-picker" />
+    <MESSAGE value="small ui change" />
+    <option name="LAST_COMMIT_MESSAGE" value="small ui change" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">

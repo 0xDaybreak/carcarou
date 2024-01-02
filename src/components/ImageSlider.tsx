@@ -5,7 +5,7 @@ import {ColorResult, SketchPicker} from "react-color";
 import './ImageSlider.css';
 import {useLocation} from "react-router-dom";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-
+import mascot from "../images/mascot/mascot.png";
 
 interface Image {
     image_id: number;
@@ -56,16 +56,44 @@ const ImageSlider = () => {
         setCurrentColor(color.hex)
         console.log(color.hex)
     }
+    const handleConfirmColorClick = () => {
+        const apiUrl = "http://127.0.0.1:7070/cars/newimage";
+        fetch(apiUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(image),
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                setImage(data)
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+    };
+
+
     return (
         image.url.length > 0 ? (
             <div className="image-slider-container">
+                <div className={"mascot"}>
+                    <img src={mascot} alt={"missing mascot"} />
+                </div>
                 <div className={"sketchpicker"}>
                     <SketchPicker
                         color={currentColor}
                         onChangeComplete={handleOnChange}
                         disableAlpha={true}
                     />
-                    <Button color ="info" variant={"contained"} endIcon=<ArrowForwardIosIcon/> className={"confirm-color-btn"}>
+                    <Button color ="info" variant={"contained"} endIcon=<ArrowForwardIosIcon/> className={"confirm-color-btn"} onClick={handleConfirmColorClick}>
                         Confirm Color
                     </Button>
                 </div>

@@ -27,3 +27,9 @@
     text-transform: initial;
     margin-top: 0.3rem;
 }
+
+.mascot {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+}
