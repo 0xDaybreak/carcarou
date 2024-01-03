@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Button from '@mui/material/Button';
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import {ColorResult, SketchPicker} from "react-color";
+import {ColorResult, RGBColor, SketchPicker} from "react-color";
 import './ImageSlider.css';
 import {useLocation} from "react-router-dom";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -10,14 +10,18 @@ import mascot from "../images/mascot/mascot.png";
 interface Image {
     image_id: number;
     url: string[];
+    colors:number[];
 }
 
 const ImageSlider = () => {
-    const [counter, setCounter]: [number, React.Dispatch<React.SetStateAction<number>>] = useState(0)
+    const [counter, setCounter]: [number, React.Dispatch<React.SetStateAction<number>>] = useState(0);
+    const [currentColor, setCurrentColor] = useState<RGBColor>({ r: 0, g: 0, b: 0 });
     const [image, setImage]: [Image, React.Dispatch<React.SetStateAction<Image>>] = useState({
         image_id: 0,
         url: ['error'],
+        colors:[0,0,0]
     });
+
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const make = queryParams.get('make');
@@ -47,14 +51,23 @@ const ImageSlider = () => {
             .then((response) => response.json())
             .then((data) => {
                 setImage(data);
+                console.log("Data is set to: ");
                 console.log(data);
             })
             .catch((error) => console.log(error));
     }, [make, model, year]);
-    const [currentColor, setCurrentColor] = useState<string>("#ff6")
-    const handleOnChange = (color: ColorResult) => {
-        setCurrentColor(color.hex)
-        console.log(color.hex)
+
+    useEffect(()=>{
+        image.colors[0] = (currentColor.r);
+        image.colors[1] = (currentColor.g);
+        image.colors[2] = (currentColor.b);
+
+    },[currentColor])
+
+
+    const handleOnColorChange = (color: ColorResult) => {
+        setCurrentColor(color.rgb);
+
     }
     const handleConfirmColorClick = () => {
         const apiUrl = "http://127.0.0.1:7070/cars/newimage";
@@ -90,7 +103,7 @@ const ImageSlider = () => {
                 <div className={"sketchpicker"}>
                     <SketchPicker
                         color={currentColor}
-                        onChangeComplete={handleOnChange}
+                        onChangeComplete={handleOnColorChange}
                         disableAlpha={true}
                     />
                     <Button color ="info" variant={"contained"} endIcon=<ArrowForwardIosIcon/> className={"confirm-color-btn"} onClick={handleConfirmColorClick}>
