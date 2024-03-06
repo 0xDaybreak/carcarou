@@ -5,7 +5,6 @@ import {ColorResult, RGBColor, SketchPicker} from "react-color";
 import './ImageSlider.css';
 import {useLocation} from "react-router-dom";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import mascot from "../images/mascot/mascot.png";
 
 interface Image {
     image_id: number;
@@ -44,7 +43,7 @@ const ImageSlider = () => {
     }
 
     useEffect(() => {
-        const apiUrl = `http://127.0.0.1:7070/cars/visualize?make=${make}&model=${model}&year=${year}`;
+        const apiUrl = `http://127.0.0.1:7071/cars/visualize?make=${make}&model=${model}&year=${year}`;
         fetch(apiUrl, {
             method: "GET",
         })
@@ -70,7 +69,7 @@ const ImageSlider = () => {
 
     }
     const handleConfirmColorClick = () => {
-        const apiUrl = "http://127.0.0.1:7070/cars/newimage";
+        const apiUrl = "http://127.0.0.1:7071/cars/newimage";
         fetch(apiUrl, {
             method: "POST",
             headers: {
@@ -97,9 +96,6 @@ const ImageSlider = () => {
     return (
         image.url.length > 0 ? (
             <div className="image-slider-container">
-                <div className={"mascot"}>
-                    <img src={mascot} alt={"missing mascot"} />
-                </div>
                 <div className={"sketchpicker"}>
                     <SketchPicker
                         color={currentColor}

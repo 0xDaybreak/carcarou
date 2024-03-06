@@ -22,7 +22,7 @@ const CarSelectionForm = () => {
 
 
     useEffect(() => {
-        fetch("http://127.0.0.1:7070/cars", {
+        fetch("http://127.0.0.1:7071/cars", {
             method: "GET",
         })
             .then((response) => response.json())

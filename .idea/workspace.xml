@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="confirm button now sends post request">
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="added start page header and footer">
+      <change afterPath="$PROJECT_DIR$/src/components/home/Footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CarSelectionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarSelectionForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,14 +46,17 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Daybreak/Desktop/frontend/carcarousel/src/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/trdwave/trendwave&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Daybreak\\Desktop\\frontend\\carcarousel\\node_modules\\typescript\\lib&quot;
+    &quot;ts.external.directory.path&quot;: &quot;E:\\lic\\carcarou\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -77,6 +92,15 @@
       <workItem from="1704217941924" duration="625000" />
       <workItem from="1704226807943" duration="340000" />
       <workItem from="1704293381844" duration="2017000" />
+      <workItem from="1704963826094" duration="1398000" />
+      <workItem from="1704982597686" duration="871000" />
+      <workItem from="1705231769598" duration="92000" />
+      <workItem from="1705510569341" duration="630000" />
+      <workItem from="1706526304403" duration="378000" />
+      <workItem from="1706539184235" duration="832000" />
+      <workItem from="1708088314612" duration="3000" />
+      <workItem from="1709118894716" duration="1055000" />
+      <workItem from="1709730724604" duration="2320000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -166,7 +190,8 @@
     <MESSAGE value="added color-picker" />
     <MESSAGE value="small ui change" />
     <MESSAGE value="confirm button now sends post request" />
-    <option name="LAST_COMMIT_MESSAGE" value="confirm button now sends post request" />
+    <MESSAGE value="added start page header and footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="added start page header and footer" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
