@@ -4,13 +4,10 @@
     color: #d3cbcb;
 }
 
-/* DialogComp.css */
-
-/* Styles for the dialog paper */
 .custom-dialog-paper .MuiPaper-root {
-    background-color: #194d7c; /* Background color of the dialog */
-    color: #333; /* Font color */
-    border-radius: 8px;
+    background-color: #194d7c;
+    color: #333;
+    border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -21,4 +18,11 @@
 }
 .custom-dialog-content .MuiInputBase-input {
     color: #d3cbcb;
+
+}
+
+.custom-dialog-content .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: #d3cbcb;
+    border-radius: 40px;
+
 }

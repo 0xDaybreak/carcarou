@@ -20,7 +20,8 @@ const DialogComp:React.FC<DialogCompProps> = (props) => {
         <Dialog open={props.open} onClose={props.onClick} className={"custom-dialog-paper"}>
             <DialogTitle className={"custom-dialog-content"}>Sign Up</DialogTitle>
             <DialogContent className={"custom-dialog-content"}>
-                <TextField autoFocus margin="dense" label="Name" type="text" fullWidth/>
+                <TextField autoFocus margin="dense" label="First Name" type="text" fullWidth/>
+                <TextField autoFocus margin="dense" label="Last Name" type="text" fullWidth/>
                 <TextField margin="dense" label="Email Address" type="email" fullWidth />
                 <TextField margin="dense" label="Password" type="password" fullWidth/>
             </DialogContent>

@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="added start page header and footer">
-      <change afterPath="$PROJECT_DIR$/src/components/home/DialogComp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/DialogComp.tsx" afterDir="false" />
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="ui signup improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/DialogComp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/DialogComp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/DialogComp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/DialogComp.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
       <workItem from="1709736573986" duration="32000" />
       <workItem from="1710165122231" duration="1248000" />
       <workItem from="1710277916831" duration="13000" />
-      <workItem from="1710327535433" duration="4979000" />
+      <workItem from="1710327535433" duration="5767000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -170,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709733086083</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ui signup improvements">
+      <created>1710334512861</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710334512861</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +201,8 @@
     <MESSAGE value="small ui change" />
     <MESSAGE value="confirm button now sends post request" />
     <MESSAGE value="added start page header and footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added start page header and footer" />
+    <MESSAGE value="ui signup improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="ui signup improvements" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
