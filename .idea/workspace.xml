@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="ui signup improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/DialogComp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/DialogComp.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/DialogComp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/DialogComp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,7 @@
       <workItem from="1709736573986" duration="32000" />
       <workItem from="1710165122231" duration="1248000" />
       <workItem from="1710277916831" duration="13000" />
-      <workItem from="1710327535433" duration="5767000" />
+      <workItem from="1710327535433" duration="6795000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -175,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710334512861</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ui signup improvements">
+      <created>1710335326743</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710335326743</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

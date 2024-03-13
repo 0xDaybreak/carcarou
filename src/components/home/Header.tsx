@@ -21,11 +21,6 @@ const Header = () => {
         setOpen(false);
     };
 
-    const handleSignUp = () => {
-        // Handle sign up logic
-        setOpen(false);
-    };
-
     return (
         <div className="header">
             <nav>
@@ -39,7 +34,8 @@ const Header = () => {
                 <a href="#">Login</a>
                 <Button variant="outlined" className="visualizer-button" onClick={handleOpen}>Try Visualizer for Free</Button>
             </div>
-            <DialogComp open={open} onClick={handleClose} onSignup={handleSignUp}/>
+            <DialogComp open={open} onClick={handleClose}/>
+
         </div>
     );
 };
