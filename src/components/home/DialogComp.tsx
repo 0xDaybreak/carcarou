@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Dialog, DialogTitle, DialogContent, TextField, DialogActions, Button } from "@mui/material";
+import React, {useState} from "react";
+import {Dialog, DialogTitle, DialogContent, TextField, DialogActions, Button} from "@mui/material";
 import './DialogComp.css';
 
 interface DialogCompProps {
@@ -9,12 +9,14 @@ interface DialogCompProps {
 
 const DialogComp: React.FC<DialogCompProps> = (props) => {
     const [user, setUser] = useState({
-        firstName: "",
-        lastName: "",
-        email: "",
-        password: ""
-    });
+        id: 0,
+        email: "z",
+        firstname: "z",
+        lastname: "z",
+        password_hash: "z",
+        phone_number: "1"
 
+    });
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target;
         setUser(prevUser => ({
@@ -39,7 +41,7 @@ const DialogComp: React.FC<DialogCompProps> = (props) => {
                 }
                 return response.json();
             })
-            .then(data => {
+            .then(() => {
                 // Handle successful response
             })
             .catch(error => {
@@ -57,8 +59,8 @@ const DialogComp: React.FC<DialogCompProps> = (props) => {
                     label="First Name"
                     type="text"
                     fullWidth
-                    name="firstName"
-                    value={user.firstName}
+                    name="firstname"
+                    value={user.firstname}
                     onChange={handleChange}
                 />
                 <TextField
@@ -66,8 +68,8 @@ const DialogComp: React.FC<DialogCompProps> = (props) => {
                     label="Last Name"
                     type="text"
                     fullWidth
-                    name="lastName"
-                    value={user.lastName}
+                    name="lastname"
+                    value={user.lastname}
                     onChange={handleChange}
                 />
                 <TextField
@@ -84,8 +86,8 @@ const DialogComp: React.FC<DialogCompProps> = (props) => {
                     label="Password"
                     type="password"
                     fullWidth
-                    name="password"
-                    value={user.password}
+                    name="password_hash"
+                    value={user.password_hash}
                     onChange={handleChange}
                 />
             </DialogContent>
