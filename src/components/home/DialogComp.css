@@ -24,5 +24,73 @@
 .custom-dialog-content .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
     border-color: #d3cbcb;
     border-radius: 40px;
+}
+.custom-dialog-content {
+    background-color: #194d7c; /* Change background color as needed */
+    padding: 20px;
+    color: #d3cbcb;
+}
 
+.custom-dialog-paper .MuiPaper-root {
+    background-color: #194d7c;
+    color: #333;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.custom-dialog-content .MuiFormLabel-root {
+    color: #d3cbcb;
+}
+.custom-dialog-content .MuiInputBase-input {
+    color: #d3cbcb;
+
+}
+
+.custom-dialog-content .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: #d3cbcb;
+    border-radius: 40px;
+}
+
+.custom-dialog-content {
+    background-color: #194d7c; /* Change background color as needed */
+    padding: 20px;
+    color: #d3cbcb;
+}
+
+.custom-dialog-paper .MuiPaper-root {
+    background-color: #194d7c;
+    color: #333;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.custom-dialog-content .MuiFormLabel-root {
+    color: #d3cbcb;
+}
+.custom-dialog-content .MuiInputBase-input {
+    color: #d3cbcb;
+}
+
+.custom-dialog-content .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: #d3cbcb;
+    border-radius: 40px;
+}
+
+.MuiButton-root.sign-up-btn {
+    background: linear-gradient(to right, #b214cb, #ec7f9f);
+    border-radius: 20px !important; /* Adjust border radius as needed */
+    color: white !important; /* Text color */
+}
+
+.MuiButton-root.sign-up-btn:hover {
+    background: linear-gradient(to right, #ec7f9f, #b214cb); /* Reverse gradient on hover */
+}
+
+.MuiButton-root.cancel-btn {
+    border-radius: 20px !important; /* Adjust border radius as needed */
+    color: white !important; /* Text color */
 }

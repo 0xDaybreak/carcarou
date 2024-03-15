@@ -31,7 +31,7 @@ const Header = () => {
                 </ul>
             </nav>
             <div className="auth-links">
-                <a href="#">Login</a>
+                <a href="">Sign in</a>
                 <Button variant="outlined" className="visualizer-button" onClick={handleOpen}>Try Visualizer for Free</Button>
             </div>
             <DialogComp open={open} onClick={handleClose}/>

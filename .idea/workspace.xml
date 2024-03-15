@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="ui signup improvements">
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="can now sign-up">
+      <change afterPath="$PROJECT_DIR$/src/components/home/Body.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/Body.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/gifs/black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/gifs/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/gifs/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/gifs/white.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/car_brands_logos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/DialogComp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/DialogComp.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/DialogComp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/DialogComp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/HomeContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,35 +43,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/project/licenta/carcarou",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\project\\licenta\\carcarou\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/project/licenta/carcarou&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\project\\licenta\\carcarou\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\licenta\carcarou\src\components\home" />
+      <recent name="C:\project\licenta\carcarou\resources\gifs" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\mascot" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\model" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\make" />
-      <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images" />
-      <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\resources" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -98,7 +107,8 @@
       <workItem from="1710165122231" duration="1248000" />
       <workItem from="1710277916831" duration="13000" />
       <workItem from="1710327535433" duration="6795000" />
-      <workItem from="1710415874273" duration="6011000" />
+      <workItem from="1710415874273" duration="6637000" />
+      <workItem from="1710510117731" duration="3219000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -184,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710335326743</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="can now sign-up">
+      <created>1710428033226</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710428033226</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +228,8 @@
     <MESSAGE value="confirm button now sends post request" />
     <MESSAGE value="added start page header and footer" />
     <MESSAGE value="ui signup improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="ui signup improvements" />
+    <MESSAGE value="can now sign-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="can now sign-up" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">

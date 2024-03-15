@@ -10,11 +10,11 @@ interface DialogCompProps {
 const DialogComp: React.FC<DialogCompProps> = (props) => {
     const [user, setUser] = useState({
         id: 0,
-        email: "z",
-        firstname: "z",
-        lastname: "z",
-        password_hash: "z",
-        phone_number: "1"
+        email: "",
+        firstname: "",
+        lastname: "",
+        password_hash: "",
+        phone_number: ""
 
     });
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -92,8 +92,8 @@ const DialogComp: React.FC<DialogCompProps> = (props) => {
                 />
             </DialogContent>
             <DialogActions className={"custom-dialog-content"}>
-                <Button onClick={props.onClick} color="secondary">Cancel</Button>
-                <Button onClick={handleConfirmSignUpClick} color="primary">Sign Up</Button>
+                <Button onClick={props.onClick} color="secondary" className={"cancel-btn"}>Cancel</Button>
+                <Button onClick={handleConfirmSignUpClick} color="primary" className={"sign-up-btn"}>Sign Up</Button>
             </DialogActions>
         </Dialog>
     );
