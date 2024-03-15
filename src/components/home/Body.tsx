@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material';
+import {Grid} from '@mui/material';
 import './Body.css';
 import {useEffect, useState} from "react";
 import redCar from './gifs/red.png';
@@ -25,11 +25,12 @@ const Body = () => {
                 <Grid item xs={12} md={6}>
                     {/* Content for the left column */}
                     <div className="left-column">
+                        <div className="gradient-background-l"></div>
                         <h1 className="app-heading">
-                            Visualize Your Dream Car
+                            Visualize Your Dream Car Discover Your Style
                             <span className="sub-heading">
-                    Choose from a range of colors
-                    to customize your ride.
+                                Select from an array of vibrant
+                            colors to match your personality and stand out on the road.
                 </span>
                         </h1>
                     </div>
@@ -37,7 +38,7 @@ const Body = () => {
                 <Grid item xs={12} md={6}>
                     {/* Content for the right column */}
                     <div className="right-column">
-                        <div className="gradient-background"></div>
+                        <div className="gradient-background-r"></div>
                         <img src={cars[carIndex]} alt="Car" className={"car"}/>
                     </div>
                 </Grid>
