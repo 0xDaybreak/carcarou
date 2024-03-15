@@ -37,6 +37,7 @@ const Body = () => {
                 <Grid item xs={12} md={6}>
                     {/* Content for the right column */}
                     <div className="right-column">
+                        <div className="gradient-background"></div>
                         <img src={cars[carIndex]} alt="Car" className={"car"}/>
                     </div>
                 </Grid>

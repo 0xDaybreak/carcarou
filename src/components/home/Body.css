@@ -19,13 +19,34 @@
     text-align: left;
     color: #86cfd9;
 }
+.car-container {
+    position: relative;
+}
 
 .car {
     width: 100%;
     height: auto;
+    position: relative;
+    z-index: 1; /* Ensure car image is above the gradient background */
+}
+
+.gradient-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    border-radius: 70%;
+    background: radial-gradient(ellipse at center, rgb(62, 117, 176) 20%, rgba(4, 68, 126, 0) 70%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .grid {
     justify-content: center;
     align-items: center;
+}
+
+.right-column {
+    position: relative;
 }
