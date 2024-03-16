@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="improved ui">
+      <change afterPath="$PROJECT_DIR$/src/components/home/images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Body.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Body.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +58,11 @@
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\licenta\carcarou\src\components\home\images" />
       <recent name="C:\project\licenta\carcarou\src\components\home" />
       <recent name="C:\project\licenta\carcarou\resources\gifs" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\mascot" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\model" />
-      <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\make" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -98,7 +99,8 @@
       <workItem from="1710277916831" duration="13000" />
       <workItem from="1710327535433" duration="6795000" />
       <workItem from="1710415874273" duration="6637000" />
-      <workItem from="1710510117731" duration="4961000" />
+      <workItem from="1710510117731" duration="5586000" />
+      <workItem from="1710586206370" duration="2087000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -205,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710514422481</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="improved ui">
+      <created>1710515149159</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1710515149159</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
