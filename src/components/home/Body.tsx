@@ -21,7 +21,7 @@ const Body = () => {
     return (
         <div className={"margin"}>
 
-            <Grid container spacing={3} className={"grid"}>
+            <Grid container spacing={2} className={"grid"}>
                 <Grid item xs={12} md={6}>
                     {/* Content for the left column */}
                     <div className="left-column">
@@ -40,6 +40,19 @@ const Body = () => {
                     <div className="right-column">
                         <div className="gradient-background-r"></div>
                         <img src={cars[carIndex]} alt="Car" className={"car"}/>
+                    </div>
+                    <div className="right-column-feature">
+                        <h2 className="feature-heading">Unlock Your Car's Potential</h2>
+                        <p className="feature-description">
+                            Elevate your driving experience with our advanced car color visualizer.
+                            With its intuitive interface and vast selection of colors, you can
+                            unleash your creativity and design a car that reflects your unique style.
+                            Stand out from the crowd and turn heads wherever you go.
+                            Our visualizer tool empowers you to transform your vehicle into a
+                            personalized masterpiece that embodies both elegance and innovation.
+                            Get ready to explore endless possibilities and make a statement
+                            with your dream car today.
+                        </p>
                     </div>
                 </Grid>
             </Grid>

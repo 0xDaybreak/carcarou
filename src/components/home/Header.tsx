@@ -20,7 +20,7 @@ const Header = () => {
         <div className="header">
             <div className={"left-nav-btns"}>
                 <img className={"logo"} src={logo} alt={"home"}/>
-                <Button variant="text">About</Button>
+                <Button variant="text">About us</Button>
                 <Button variant="text">Contact</Button>
             </div>
             <div className="auth-links">
