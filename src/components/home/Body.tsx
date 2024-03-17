@@ -20,7 +20,6 @@ const Body = () => {
 
     return (
         <div className={"margin"}>
-
             <Grid container spacing={2} className={"grid"}>
                 <Grid item xs={12} md={6}>
                     {/* Content for the left column */}

@@ -1,6 +1,6 @@
 
 .margin {
-    margin-left: 5rem;
+
     align-items: flex-start; /* Align items at the start of the cross axis */
     color: #d3cbcb;
 }
@@ -58,15 +58,19 @@
 
 
 .grid {
+
     background-color: #194d7c;
 }
 
 .right-column {
     position: relative;
+    margin-top: 10%;
 }
 
 .left-column{
+    margin-left: 5rem;
     position: relative;
+    margin-top: 25%;
 }
 
 .right-column-feature {

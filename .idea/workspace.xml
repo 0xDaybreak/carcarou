@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/components/home/Body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Body.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/Body.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Body.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,8 @@
       <workItem from="1710327535433" duration="6795000" />
       <workItem from="1710415874273" duration="6637000" />
       <workItem from="1710510117731" duration="5586000" />
-      <workItem from="1710586206370" duration="3373000" />
+      <workItem from="1710586206370" duration="3673000" />
+      <workItem from="1710661439922" duration="450000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -222,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710588348077</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="improved ui">
+      <created>1710589642461</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1710589642461</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

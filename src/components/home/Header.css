@@ -53,7 +53,7 @@
 }
 
 .left-nav-btns {
-    flex-grow: 0.062;
+    flex-grow: 0.064;
     display: flex;
     justify-content: center;
 }
