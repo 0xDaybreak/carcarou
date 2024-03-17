@@ -9,7 +9,6 @@ const HomeContainer = () => {
         <div className={"bg-color"}>
             <Header/>
                 <Body/>
-            <Footer/>
         </div>
     );
 };

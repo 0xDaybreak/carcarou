@@ -1,16 +1,15 @@
 
 .margin {
-
-    align-items: flex-start; /* Align items at the start of the cross axis */
+    align-items: flex-start;
     color: #d3cbcb;
 }
-
 
 .app-heading {
     font-size: 4rem;
     font-weight: bold;
     text-align: left;
     z-index: 1;
+    opacity: 0;
 }
 
 .sub-heading {
@@ -21,6 +20,7 @@
     text-align: left;
     color: #86cfd9;
     z-index: 1;
+    opacity: 0;
 }
 .car-container {
     position: relative;
@@ -58,7 +58,6 @@
 
 
 .grid {
-
     background-color: #194d7c;
 }
 
@@ -73,14 +72,69 @@
     margin-top: 25%;
 }
 
+
+.app-heading {
+    opacity: 0;
+    position: relative;
+    bottom: -20px;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+.sub-heading {
+    opacity: 0;
+    position: relative;
+    bottom: -20px;
+    animation: fadeInUp 2s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        bottom: -10px;
+    }
+    to {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
 .right-column-feature {
-    margin-top: 40%;
+    margin-top: 35%;
 }
 
 .feature-heading {
-
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    z-index: 1;
+    animation: fadeInUp 2s ease-in-out forwards;
 }
 
 .feature-description {
+    font-size: 1rem;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    z-index: 1;
+    max-width: calc(100% - 10rem);
+    flex-grow: 1;
+}
+
+.a-customization {
+    margin-top: 50%;
+    height: 30rem;
+    width: 30rem;
+    margin-left: 10%;
+}
+
+.left-column-feature {
+    margin-top: 35%;
+    margin-left: 10%;
+}
+
+.c-customization {
+    margin-left: 10%;
+    margin-top: 38%;
+    height: 25rem;
+    opacity: 0.96;
 
 }
