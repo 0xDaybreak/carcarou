@@ -7,13 +7,17 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { Logout, Person } from '@mui/icons-material'; // Import icons for the menu items
+import {Logout, Person, Settings} from '@mui/icons-material'; // Import icons for the menu items
 import './Header.css';
 import DialogComp from "./DialogComp";
 import logo from './images/logo.png';
 import DialogCompSignIn from "./DialogCompSignIn";
 
-const Header = () => {
+interface HeaderProps {
+    handleLogIn: () => void,
+}
+
+const Header:React.FC<HeaderProps> = (props) => {
     const [isSignUpOpen, setOpenSignUp] = useState(false);
     const [isSignInOpen, setOpenSignIn] = useState(false);
     const [isSignedIn, setIsSignedIn] = useState(false);
@@ -43,6 +47,7 @@ const Header = () => {
         setTimeout(() => {
             setShowSuccessNotification(false);
         }, 1500);
+        props.handleLogIn();
     };
 
     const handleSignOut = () => {
@@ -88,7 +93,13 @@ const Header = () => {
                                 <ListItemIcon>
                                     <Person />
                                 </ListItemIcon>
-                                <ListItemText primary="Profile" />
+                                <ListItemText primary="Account" />
+                            </ListItem>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <Settings />
+                                </ListItemIcon>
+                                <ListItemText primary="Settings" />
                             </ListItem>
                             <ListItem button onClick={handleSignOut}>
                                 <ListItemIcon>

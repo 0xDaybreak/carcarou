@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="Added Sign in">
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="Added Avatar for signing out">
+      <change afterPath="$PROJECT_DIR$/src/components/logged/Card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logged/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logged/LoggedBody.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logged/LoggedBody.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logged/images/carchange.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +62,11 @@
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\licenta\carcarou\src\components\logged\images" />
       <recent name="C:\project\licenta\carcarou\src\components\home\images" />
       <recent name="C:\project\licenta\carcarou\src\components\home" />
       <recent name="C:\project\licenta\carcarou\resources\gifs" />
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\mascot" />
-      <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\model" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -103,7 +108,7 @@
       <workItem from="1710661439922" duration="4837000" />
       <workItem from="1710667040224" duration="96000" />
       <workItem from="1710760935932" duration="3145000" />
-      <workItem from="1710767867909" duration="5782000" />
+      <workItem from="1710767867909" duration="8288000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -266,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710770170336</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added Avatar for signing out">
+      <created>1710774395054</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1710774395054</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +309,8 @@
     <MESSAGE value="added sign in dialog" />
     <MESSAGE value="improved ui" />
     <MESSAGE value="Added Sign in" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Sign in" />
+    <MESSAGE value="Added Avatar for signing out" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Avatar for signing out" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
