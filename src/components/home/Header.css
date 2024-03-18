@@ -11,34 +11,13 @@
     z-index: 2;
 }
 
-
-.header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.header nav ul li:last-child {
-    margin-right: 0;
-}
-
-.header nav ul li:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
 .auth-links {
     flex-grow: 0.15;
     margin-left: auto;
 }
 
-.auth-links a {
-    color: #d3cbcb;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
 .auth-links button {
-    margin-left: 20px;
+    margin-left: 0.8rem;
     background-color: transparent;
     color: #d3cbcb;
     border: 1px solid #d3cbcb;
@@ -46,6 +25,8 @@
     padding: 0.5rem 0.5rem;
     font-size: 1rem;
     text-transform: none;
+
+
 }
 
 .auth-links button:hover {
@@ -63,7 +44,6 @@
     font-size: 1.3rem;
     border-radius: 18px;
 }
-
 
 .left-nav-btns {
     flex-grow: 0.064;
@@ -88,4 +68,20 @@
 
 .logo:hover {
     cursor: pointer;
+}
+
+.notification-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.avatar:hover {
+    cursor: pointer;
+}
+
+.avatar {
+    margin-right: 0;
 }

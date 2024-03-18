@@ -1,16 +1,25 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
+import Alert from '@mui/material/Alert';
+import Avatar from '@mui/material/Avatar';
+import Popover from '@mui/material/Popover';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import { Logout, Person } from '@mui/icons-material'; // Import icons for the menu items
 import './Header.css';
 import DialogComp from "./DialogComp";
 import logo from './images/logo.png';
 import DialogCompSignIn from "./DialogCompSignIn";
 
 const Header = () => {
-
     const [isSignUpOpen, setOpenSignUp] = useState(false);
     const [isSignInOpen, setOpenSignIn] = useState(false);
-
     const [isSignedIn, setIsSignedIn] = useState(false);
+    const [showSuccessNotification, setShowSuccessNotification] = useState(false);
+    const [anchorEl, setAnchorEl] = useState<HTMLDivElement | null>(null);
+
 
     const handleSignUpOpen = () => {
         setOpenSignUp(true);
@@ -28,14 +37,28 @@ const Header = () => {
         setOpenSignIn(false);
     };
 
-    const handleSignIn = () =>{
+    const handleSignIn = () => {
         setIsSignedIn(true);
-        console.log(isSignedIn);
+        setShowSuccessNotification(true);
+        setTimeout(() => {
+            setShowSuccessNotification(false);
+        }, 1500);
     };
 
-    useEffect(() => {
+    const handleSignOut = () => {
+        setIsSignedIn(false);
+        setAnchorEl(null);
+    };
 
-    },[isSignedIn]);
+    const handleAvatarClick = (event:React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleAvatarClose = () => {
+        setAnchorEl(null);
+    };
+
+    const open = Boolean(anchorEl);
 
     return (
         <div className="header">
@@ -44,10 +67,51 @@ const Header = () => {
                 <Button variant="text" className={"left-header-btn"}>About us</Button>
                 <Button variant="text" className={"left-header-btn"}>Contact</Button>
             </div>
-            {isSignedIn ? <div>Sign Out</div> : <div className="auth-links">
-                <Button className="sign-in-btn" variant="text" onClick={handleSignInOpen}>Sign in</Button>
-                <Button variant="outlined" onClick={handleSignUpOpen}>Try Visualizer for Free</Button>
-            </div>}
+            {isSignedIn ?
+                <div className="auth-links">
+                    <Avatar className={"avatar"} alt="User" onClick={handleAvatarClick} />
+                    <Popover
+                        open={open}
+                        anchorEl={anchorEl}
+                        onClose={handleAvatarClose}
+                        anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'right',
+                        }}
+                        transformOrigin={{
+                            vertical: 'top',
+                            horizontal: 'right',
+                        }}
+                    >
+                        <List>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <Person />
+                                </ListItemIcon>
+                                <ListItemText primary="Profile" />
+                            </ListItem>
+                            <ListItem button onClick={handleSignOut}>
+                                <ListItemIcon>
+                                    <Logout />
+                                </ListItemIcon>
+                                <ListItemText primary="Logout" />
+                            </ListItem>
+                        </List>
+                    </Popover>
+                    {showSuccessNotification && (
+                        <div className={"notification-wrapper"}>
+                            <Alert severity="success" onClose={() => setShowSuccessNotification(false)}>
+                                You have successfully signed in!
+                            </Alert>
+                        </div>
+                    )}
+                </div>
+                :
+                <div className="auth-links">
+                    <Button className="sign-in-btn" variant="text" onClick={handleSignInOpen}>Sign in</Button>
+                    <Button variant="outlined" onClick={handleSignUpOpen}>Try Visualizer for Free</Button>
+                </div>
+            }
             <DialogComp isSignUpOpen={isSignUpOpen} onClick={handleCloseSignUp}/>
             <DialogCompSignIn isSigInOpen={isSignInOpen} handleSignIn={handleSignIn} handleClose={handleCloseSignIn}/>
         </div>
