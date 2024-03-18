@@ -12,12 +12,16 @@ import './Header.css';
 import DialogComp from "./DialogComp";
 import logo from './images/logo.png';
 import DialogCompSignIn from "./DialogCompSignIn";
+import {useNavigate} from "react-router-dom";
 
 interface HeaderProps {
     handleLogIn: () => void,
 }
 
 const Header:React.FC<HeaderProps> = (props) => {
+    const navigate = useNavigate();
+
+
     const [isSignUpOpen, setOpenSignUp] = useState(false);
     const [isSignInOpen, setOpenSignIn] = useState(false);
     const [isSignedIn, setIsSignedIn] = useState(false);
@@ -51,8 +55,10 @@ const Header:React.FC<HeaderProps> = (props) => {
     };
 
     const handleSignOut = () => {
-        setIsSignedIn(false);
         setAnchorEl(null);
+        setIsSignedIn(false);
+        navigate('/');
+        window.location.reload();
     };
 
     const handleAvatarClick = (event:React.MouseEvent<HTMLDivElement, MouseEvent>) => {
