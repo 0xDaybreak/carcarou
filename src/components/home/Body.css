@@ -136,5 +136,16 @@
     margin-top: 38%;
     height: 25rem;
     opacity: 0.96;
+}
 
+.MuiButton-root.sign-up-btn-body {
+    margin-top: 0.5rem;
+    background: linear-gradient(to right, #b214cb, #ec7f9f);
+    border-radius: 17px !important;
+    color: #efe4e4 !important;
+    font-weight: bold;
+}
+
+.MuiButton-root.sign-up-btn-body:hover {
+    background: linear-gradient(to right, #ec7f9f, #b214cb); /* Reverse gradient on hover */
 }

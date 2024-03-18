@@ -7,6 +7,7 @@ import blackCar from './gifs/black.png';
 import whiteCar from './gifs/white.png';
 import aCustomization from './images/acustomization.png';
 import carVec from './images/carvec.png';
+import Button from "@mui/material/Button";
 
 
 const Body = () => {
@@ -35,7 +36,11 @@ const Body = () => {
                         <span className="sub-heading">
                                 Select from an array of vibrant
                             colors to match your personality and stand out on the road.
+                            <div>
+                                <Button variant="outlined" className={"sign-up-btn-body"}>Sign up with email</Button>
+                            </div>
                     </span>
+
                         <img className="a-customization" src={aCustomization}/>
                         <div className="left-column-feature">
                             <h2 className="feature-heading">Discover Iconic Brands.</h2>

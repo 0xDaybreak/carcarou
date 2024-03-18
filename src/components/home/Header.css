@@ -1,12 +1,16 @@
 
 .header {
-    background-color: #194d7c;
     color: #d3cbcb;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
+
 
 .header nav ul li {
     display: inline;
@@ -23,7 +27,8 @@
 }
 
 .auth-links {
-    flex-grow: 0.125;
+    flex-grow: 0.15;
+    margin-left: auto;
 }
 
 .auth-links a {
@@ -52,6 +57,14 @@
     border: none !important;
 }
 
+
+.MuiButton-root.left-header-btn {
+    text-transform: none;
+    font-size: 1.3rem;
+    border-radius: 18px;
+}
+
+
 .left-nav-btns {
     flex-grow: 0.064;
     display: flex;
@@ -61,6 +74,7 @@
 .left-nav-btns button {
     alignment: center;
     color: #d3cbcb;
+
 }
 
 .left-nav-btns button:hover {

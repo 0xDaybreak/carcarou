@@ -8,7 +8,7 @@ const HomeContainer = () => {
     return (
         <div className={"bg-color"}>
             <Header/>
-                <Body/>
+            <Body/>
         </div>
     );
 };
