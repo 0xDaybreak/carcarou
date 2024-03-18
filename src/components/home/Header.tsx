@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Button from '@mui/material/Button';
 import './Header.css';
 import DialogComp from "./DialogComp";
@@ -9,6 +9,8 @@ const Header = () => {
 
     const [isSignUpOpen, setOpenSignUp] = useState(false);
     const [isSignInOpen, setOpenSignIn] = useState(false);
+
+    const [isSignedIn, setIsSignedIn] = useState(false);
 
     const handleSignUpOpen = () => {
         setOpenSignUp(true);
@@ -26,6 +28,15 @@ const Header = () => {
         setOpenSignIn(false);
     };
 
+    const handleSignIn = () =>{
+        setIsSignedIn(true);
+        console.log(isSignedIn);
+    };
+
+    useEffect(() => {
+
+    },[isSignedIn]);
+
     return (
         <div className="header">
             <div className={"left-nav-btns"}>
@@ -33,12 +44,12 @@ const Header = () => {
                 <Button variant="text" className={"left-header-btn"}>About us</Button>
                 <Button variant="text" className={"left-header-btn"}>Contact</Button>
             </div>
-            <div className="auth-links">
+            {isSignedIn ? <div>Sign Out</div> : <div className="auth-links">
                 <Button className="sign-in-btn" variant="text" onClick={handleSignInOpen}>Sign in</Button>
                 <Button variant="outlined" onClick={handleSignUpOpen}>Try Visualizer for Free</Button>
-            </div>
+            </div>}
             <DialogComp isSignUpOpen={isSignUpOpen} onClick={handleCloseSignUp}/>
-            <DialogCompSignIn isSigInOpen={isSignInOpen} handleClose={handleCloseSignIn}/>
+            <DialogCompSignIn isSigInOpen={isSignInOpen} handleSignIn={handleSignIn} handleClose={handleCloseSignIn}/>
         </div>
     );
 };

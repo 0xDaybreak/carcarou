@@ -1,0 +1,11 @@
+
+
+.MuiButton-root.sign-in-comp-btn{
+    background: linear-gradient(to right, #b214cb, #ec7f9f);
+    border-radius: 20px !important; /* Adjust border radius as needed */
+    color: white !important; /* Text color */
+}
+
+.MuiButton-root.sign-in-comp-btn:hover {
+    background: linear-gradient(to right, #ec7f9f, #b214cb); /* Reverse gradient on hover */
+}
