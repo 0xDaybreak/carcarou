@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Card from './Card';
-import './LoggedBody.css'; // Import your CSS file for styling
+import './LoggedBody.css';
 
 const LoggedBody = () => {
     return (

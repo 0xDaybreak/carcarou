@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = (props) => {
                 if (props.toDisplay === 'image1') {
                     importImage = await import('./images/carchange.png');
                 } else if (props.toDisplay === 'image2') {
-                    importImage = await import('./images/carchange.png');
+                    importImage = await import('./images/customer.png');
                 }
                 if (importImage !=null){
                     setImageSource(importImage.default);
@@ -30,6 +30,7 @@ const Card: React.FC<CardProps> = (props) => {
     return (
         <div className="card">
             <img src={imageSource} alt="Card Image" />
+            <span className="card-text">Auto Paint Shop</span>
         </div>
     );
 }

@@ -1,8 +1,12 @@
 
-
 .logged-items {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.logged-items > .MuiGrid-container {
+    width: 100%;
+    max-width: 50%;
 }
