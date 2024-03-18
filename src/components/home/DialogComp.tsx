@@ -3,7 +3,7 @@ import {Dialog, DialogTitle, DialogContent, TextField, DialogActions, Button} fr
 import './DialogComp.css';
 
 interface DialogCompProps {
-    open: boolean,
+    isSignUpOpen: boolean,
     onClick: () => void,
 }
 
@@ -50,7 +50,7 @@ const DialogComp: React.FC<DialogCompProps> = (props) => {
     };
 
     return (
-        <Dialog open={props.open} onClose={props.onClick} className={"custom-dialog-paper"}>
+        <Dialog open={props.isSignUpOpen} onClose={props.onClick} className={"custom-dialog-paper"}>
             <DialogTitle className={"custom-dialog-content"}>Sign Up</DialogTitle>
             <DialogContent className={"custom-dialog-content"}>
                 <TextField
