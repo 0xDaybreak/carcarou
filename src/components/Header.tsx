@@ -7,11 +7,11 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import {Logout, Person, Settings} from '@mui/icons-material'; // Import icons for the menu items
+import {Logout, Person, Settings} from '@mui/icons-material';
 import './Header.css';
-import DialogComp from "./DialogComp";
-import logo from './images/logo.png';
-import DialogCompSignIn from "./DialogCompSignIn";
+import DialogComp from "./home/DialogComp";
+import logo from './home/images/logo.png';
+import DialogCompSignIn from "./home/DialogCompSignIn";
 import {useNavigate} from "react-router-dom";
 
 interface HeaderProps {
@@ -69,12 +69,16 @@ const Header:React.FC<HeaderProps> = (props) => {
         setAnchorEl(null);
     };
 
+    const handleHomeButtonClick = () => {
+        navigate('/');
+    }
+
     const open = Boolean(anchorEl);
 
     return (
         <div className="header">
             <div className={"left-nav-btns"}>
-                <img className={"logo"} src={logo} alt={"home"}/>
+                <img className={"logo"} src={logo} alt={"home"} onClick={handleHomeButtonClick}/>
                 <Button variant="text" className={"left-header-btn"}>About us</Button>
                 <Button variant="text" className={"left-header-btn"}>Contact</Button>
             </div>

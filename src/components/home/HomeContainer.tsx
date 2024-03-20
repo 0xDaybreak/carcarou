@@ -1,21 +1,19 @@
 import React, {useState} from 'react';
-import Header from './Header';
-import Footer from './Footer';
+
 import Body from './Body';
 import './HomeContainer.css';
 import LoggedBody from '../logged/LoggedBody';
 
-const HomeContainer = () => {
-    const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+interface HomeContainerProps {
+    isLoggedIn: boolean;
+}
 
-    const handleLogIn = () => {
-        setIsLoggedIn(true);
-    };
+const HomeContainer:React.FC<HomeContainerProps> = (props) => {
+
 
     return (
         <div className={"bg-color"}>
-            <Header handleLogIn={handleLogIn}/>
-            {isLoggedIn? <LoggedBody/>: <Body/>}
+            {props.isLoggedIn? <LoggedBody/>: <Body/>}
         </div>
     );
 };

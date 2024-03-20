@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="added navigation">
-      <change afterPath="$PROJECT_DIR$/src/components/logged/images/customer.png" afterDir="false" />
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="improved cards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CarSelectionForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/customer/CarSelectionForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CarSelectionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/customer/CarSelectionForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/logged/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/Card.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/logged/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/LoggedBody.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/LoggedBody.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/logged/LoggedBody.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/LoggedBody.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/logged/images/carchange.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/images/carchange.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,24 +41,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/project/licenta/carcarou/src/components/logged/images",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\project\\licenta\\carcarou\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/project/licenta/carcarou/src/components/logged/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\project\\licenta\\carcarou\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\project\licenta\carcarou\src\components\logged\images" />
@@ -61,11 +66,11 @@
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\licenta\carcarou\src\components" />
+      <recent name="C:\project\licenta\carcarou\src\components\logged\customer" />
       <recent name="C:\project\licenta\carcarou\src\components\logged\images" />
       <recent name="C:\project\licenta\carcarou\src\components\home\images" />
       <recent name="C:\project\licenta\carcarou\src\components\home" />
-      <recent name="C:\project\licenta\carcarou\resources\gifs" />
-      <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\src\images\mascot" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,7 +113,8 @@
       <workItem from="1710667040224" duration="96000" />
       <workItem from="1710760935932" duration="3145000" />
       <workItem from="1710767867909" duration="8332000" />
-      <workItem from="1710778116899" duration="2025000" />
+      <workItem from="1710778116899" duration="2313000" />
+      <workItem from="1710932803355" duration="2757000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -292,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710778592843</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="improved cards">
+      <created>1710780189374</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1710780189375</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +338,8 @@
     <MESSAGE value="Added Avatar for signing out" />
     <MESSAGE value="improved ui" />
     <MESSAGE value="added navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added navigation" />
+    <MESSAGE value="improved cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved cards" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
