@@ -1,0 +1,14 @@
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+
+.card-container > .MuiGrid-container {
+    width: 100%;
+    max-width: 50%;
+}

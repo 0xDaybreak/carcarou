@@ -14,10 +14,10 @@ const LoggedBody= () => {
     return (
         <div className={"logged-items"}>
             <Grid container spacing={2}>
-                <Grid item xs={6}> {/* Adjust Grid item size as per your layout */}
+                <Grid item xs={6}>
                     <Card toDisplay={'image1'} name={'Shop'} handleCardClick={() => handleCardClick('/shop')} />
                 </Grid>
-                <Grid item xs={6}> {/* Adjust Grid item size as per your layout */}
+                <Grid item xs={6}>
                     <Card toDisplay={'image2'} name={'Customer'} handleCardClick={() => handleCardClick('/cars')} />
                 </Grid>
             </Grid>
