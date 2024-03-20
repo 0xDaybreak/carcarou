@@ -5,6 +5,7 @@ import CarSelectionForm from "./components/logged/customer/CarSelectionForm";
 import ImageSlider from "./components/ImageSlider";
 import HomeContainer from "./components/home/HomeContainer";
 import Header from "./components/Header";
+import Shop from "./components/logged/shop/Shop";
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
@@ -21,6 +22,7 @@ function App() {
               <Routes>
                   <Route path="" element={<HomeContainer isLoggedIn={isLoggedIn}/>}/>
                   <Route path="/cars" element={<CarSelectionForm />} />
+                  <Route path="/shop" element={<Shop />} />
                   <Route path="/cars/visualize/" element={<ImageSlider/>} />
               </Routes>
           </div>

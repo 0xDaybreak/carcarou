@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="improved cards">
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="Refactored and added improvements to log in">
+      <change afterPath="$PROJECT_DIR$/src/components/logged/shop/ColorCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logged/shop/ColorCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logged/shop/ColorGrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logged/shop/ColorGrid.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logged/shop/Shop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logged/shop/Shop.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CarSelectionForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/customer/CarSelectionForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CarSelectionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/customer/CarSelectionForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/Card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/LoggedBody.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/LoggedBody.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/images/carchange.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/images/carchange.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +111,7 @@
       <workItem from="1710760935932" duration="3145000" />
       <workItem from="1710767867909" duration="8332000" />
       <workItem from="1710778116899" duration="2313000" />
-      <workItem from="1710932803355" duration="2757000" />
+      <workItem from="1710932803355" duration="5840000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -305,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710780189375</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Refactored and added improvements to log in">
+      <created>1710935684168</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1710935684168</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +343,8 @@
     <MESSAGE value="improved ui" />
     <MESSAGE value="added navigation" />
     <MESSAGE value="improved cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved cards" />
+    <MESSAGE value="Refactored and added improvements to log in" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored and added improvements to log in" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
