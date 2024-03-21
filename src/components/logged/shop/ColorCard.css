@@ -1,6 +1,7 @@
 .card-grid {
     background-color: white;
     height: 10rem;
+    padding-right: 1rem;
 }
 
 .title {

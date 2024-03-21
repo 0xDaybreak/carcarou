@@ -2,6 +2,7 @@
 import './Shop.css';
 import ColorGrid from "./ColorGrid";
 import {useEffect, useState} from "react";
+import MakeModelYear from "./MakeModelYear";
 
 
 interface Color {
@@ -25,7 +26,8 @@ const Shop = () => {
     }, []);
     return (
     <div className={"shop-container"}>
-        <ColorGrid colors={colors} />
+        <MakeModelYear/>
+        {/*<ColorGrid colors={colors} />*/}
     </div>
     );
 }

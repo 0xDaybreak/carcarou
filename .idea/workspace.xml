@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="Added shop section">
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="Added ral color support">
+      <change afterPath="$PROJECT_DIR$/src/components/logged/shop/MakeModelYear.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/logged/shop/MakeModelYear.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/HomeContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/logged/shop/ColorCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/shop/ColorCard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/shop/ColorCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/shop/ColorCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/shop/ColorGrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/shop/ColorGrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/shop/ColorGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/shop/ColorGrid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/shop/Shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/shop/Shop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/logged/shop/Shop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/shop/Shop.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +110,7 @@
       <workItem from="1710767867909" duration="8332000" />
       <workItem from="1710778116899" duration="2313000" />
       <workItem from="1710932803355" duration="7783000" />
-      <workItem from="1711014696201" duration="3887000" />
+      <workItem from="1711014696201" duration="5698000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -327,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710947357883</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added ral color support">
+      <created>1711019957290</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1711019957290</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +365,8 @@
     <MESSAGE value="improved cards" />
     <MESSAGE value="Refactored and added improvements to log in" />
     <MESSAGE value="Added shop section" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added shop section" />
+    <MESSAGE value="Added ral color support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ral color support" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
