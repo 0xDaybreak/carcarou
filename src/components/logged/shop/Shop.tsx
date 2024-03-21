@@ -1,6 +1,7 @@
 
 import './Shop.css';
 import ColorGrid from "./ColorGrid";
+import {useEffect, useState} from "react";
 
 
 interface Color {
@@ -10,12 +11,18 @@ interface Color {
 }
 
 const Shop = () => {
-    const colors:Color[] = [
-        { ral: 'RAL 1000', name: 'Green beige', hex: '#CDBA88' },
-        { ral: 'RAL 1001', name: 'Beige', hex: '#D0B084' },
-        { ral: 'RAL 1002', name: 'Sand yellow', hex: '#D2AA6D' },
-        // Add more colors as needed
-    ];
+    const[colors, setColors] = useState<Color[]>([])
+
+    useEffect(() => {
+        fetch("http://127.0.0.1:7071/colors", {
+            method: "GET",
+        })
+            .then((response) => response.json())
+            .then((data:Color[]) => {
+                setColors(data);
+            })
+            .catch((error) => console.log(error));
+    }, []);
     return (
     <div className={"shop-container"}>
         <ColorGrid colors={colors} />

@@ -15,11 +15,14 @@ interface ColorGridProps {
 
 const ColorGrid:React.FC<ColorGridProps> = ({ colors }) => {
     return (
+        <div className={"grid-wrapper"}>
             <Grid className={"card-container"} container spacing={3}>
                 {colors.map(color => (
                     <ColorCard key={color.ral} {...color} />
                 ))}
             </Grid>
+        </div>
+
     );
 };
 export default ColorGrid

@@ -1,8 +1,8 @@
-.card {
-    background-color: transparent;
+.card-grid {
+    background-color: white;
+    height: 10rem;
 }
 
 .title {
     font-size: 2rem;
 }
-
