@@ -1,0 +1,32 @@
+.make-model-year-wrapper {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: #d3cbcb;
+}
+
+.MuiFormControl-root {
+    margin-bottom: 1.5rem !important;
+    background: linear-gradient(to right, #b214cb, #ec7f9f);
+    border-radius: 40px !important;
+    color: white !important;
+}
+
+.MuiInputLabel-root {
+    color: white !important;
+    border-radius: 40px !important;
+}
+
+.MuiOutlinedInput-input {
+    color: white !important;
+    border-radius: 40px !important;
+}
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: transparent !important;
+}
+
+/* Remove outline on focus */
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: transparent !important;
+}
