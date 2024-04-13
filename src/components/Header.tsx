@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 import Avatar from '@mui/material/Avatar';
@@ -47,6 +47,7 @@ const Header:React.FC<HeaderProps> = (props) => {
 
     const handleSignIn = () => {
         setIsSignedIn(true);
+        localStorage.setItem('isAuthenticated', 'true');
         setShowSuccessNotification(true);
         setTimeout(() => {
             setShowSuccessNotification(false);
@@ -57,6 +58,7 @@ const Header:React.FC<HeaderProps> = (props) => {
     const handleSignOut = () => {
         setAnchorEl(null);
         setIsSignedIn(false);
+        localStorage.removeItem('isAuthenticated');
         navigate('/');
         window.location.reload();
     };
@@ -74,6 +76,11 @@ const Header:React.FC<HeaderProps> = (props) => {
     }
 
     const open = Boolean(anchorEl);
+
+    useEffect(()=> {
+        const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
+        setIsSignedIn(isAuthenticated); // Update state based on localStorage value
+    },[]);
 
     return (
         <div className="header">

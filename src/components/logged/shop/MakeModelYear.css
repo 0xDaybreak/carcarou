@@ -7,7 +7,7 @@
 
 .MuiFormControl-root {
     margin-bottom: 1.5rem !important;
-    background: linear-gradient(to right, #b214cb, #ec7f9f);
+    background: linear-gradient(to right, rgba(178, 20, 203, 0.76), rgba(236, 127, 159, 0.76));
     border-radius: 40px !important;
     color: white !important;
 }
