@@ -55,6 +55,7 @@ const Header:React.FC<HeaderProps> = (props) => {
             setShowSuccessNotification(false);
         }, 1500);
         props.handleLogIn();
+        navigate("/in");
     };
 
     const handleSignOut = () => {
