@@ -25,8 +25,6 @@
     padding: 0.5rem 0.5rem;
     font-size: 1rem;
     text-transform: none;
-
-
 }
 
 .auth-links button:hover {
@@ -83,5 +81,6 @@
 }
 
 .avatar {
-    margin-right: 0;
+    position: absolute !important;
+    justify-content: center;
 }

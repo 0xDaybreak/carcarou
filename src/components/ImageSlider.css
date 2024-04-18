@@ -4,6 +4,7 @@
 
 .image-slider-container {
     position: relative;
+    background-color: #d3cbcb;
 }
 .arrow-buttons-container {
     position: absolute;
@@ -17,7 +18,7 @@
 
 .sketchpicker {
     position: absolute;
-    top: 4%;
+    top: 20%;
     left: 90%;
     transform: translateX(-50%);
     z-index: 1;
@@ -25,7 +26,7 @@
 }
 .confirm-color-btn {
     text-transform: initial;
-    margin-top: 0.3rem;
+    margin-top: 0.8rem !important;
 }
 
 .mascot {

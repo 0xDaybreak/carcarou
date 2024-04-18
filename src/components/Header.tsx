@@ -7,7 +7,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import {Logout, Person, Settings} from '@mui/icons-material';
+import {Logout, Person, Settings, Favorite} from '@mui/icons-material';
 import './Header.css';
 import DialogComp from "./home/DialogComp";
 import logo from './home/images/logo.png';
@@ -21,13 +21,11 @@ interface HeaderProps {
 const Header:React.FC<HeaderProps> = (props) => {
     const navigate = useNavigate();
 
-
     const [isSignUpOpen, setOpenSignUp] = useState(false);
     const [isSignInOpen, setOpenSignIn] = useState(false);
     const [isSignedIn, setIsSignedIn] = useState(false);
     const [showSuccessNotification, setShowSuccessNotification] = useState(false);
     const [anchorEl, setAnchorEl] = useState<HTMLDivElement | null>(null);
-
 
     const handleSignUpOpen = () => {
         setOpenSignUp(true);
@@ -43,6 +41,10 @@ const Header:React.FC<HeaderProps> = (props) => {
 
     const handleCloseSignIn = () => {
         setOpenSignIn(false);
+    };
+
+    const handleFavoriteClick = () => {
+        navigate('/user/favorites');
     };
 
     const handleSignIn = () => {
@@ -79,7 +81,7 @@ const Header:React.FC<HeaderProps> = (props) => {
 
     useEffect(()=> {
         const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
-        setIsSignedIn(isAuthenticated); // Update state based on localStorage value
+        setIsSignedIn(isAuthenticated);
     },[]);
 
     return (
@@ -117,6 +119,12 @@ const Header:React.FC<HeaderProps> = (props) => {
                                     <Settings />
                                 </ListItemIcon>
                                 <ListItemText primary="Settings" />
+                            </ListItem>
+                            <ListItem button onClick={handleFavoriteClick}>
+                                <ListItemIcon>
+                                    <Favorite />
+                                </ListItemIcon>
+                                <ListItemText primary="Saved" />
                             </ListItem>
                             <ListItem button onClick={handleSignOut}>
                                 <ListItemIcon>

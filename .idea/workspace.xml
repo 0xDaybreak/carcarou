@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="Updated ui">
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="Fixed issue where user would get logged out when refreshing in configurator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/shop/MakeModelYear.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/shop/MakeModelYear.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/HomeContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +119,10 @@
       <workItem from="1711313222548" duration="8000" />
       <workItem from="1711616735516" duration="16000" />
       <workItem from="1712984589928" duration="3473000" />
-      <workItem from="1713024392505" duration="1985000" />
+      <workItem from="1713024392505" duration="2445000" />
+      <workItem from="1713028109083" duration="1810000" />
+      <workItem from="1713352651078" duration="38000" />
+      <workItem from="1713440273574" duration="2551000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -349,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711115607767</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Fixed issue where user would get logged out when refreshing in configurator">
+      <created>1713027209764</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1713027209764</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +401,8 @@
     <MESSAGE value="Added ral color support" />
     <MESSAGE value="Added make model year" />
     <MESSAGE value="Updated ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated ui" />
+    <MESSAGE value="Fixed issue where user would get logged out when refreshing in configurator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue where user would get logged out when refreshing in configurator" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
