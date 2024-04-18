@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import touareg from '../images/model/touaregside.png'
 import golf from '../images/model/golfside.png'
+import tiguan from '../images/model/tiguan.png'
 import xtrail from '../images/model/xtrailside.png'
 import camry from '../images/model/camryside.png'
 import './CarModel.css'
@@ -20,6 +21,8 @@ const CarModel: React.FC<CarModelProps> = (props) => {
                 return touareg
             case "Golf":
                 return golf
+            case "Tiguan":
+                return tiguan
             case "X-Trail":
                 return xtrail
             case "Camry":

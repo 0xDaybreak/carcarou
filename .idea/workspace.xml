@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="small ui improvements">
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="small fix to signing in">
+      <change afterPath="$PROJECT_DIR$/src/images/model/tiguan.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logged/LoggedBody.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/logged/LoggedBody.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CarModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarModel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +58,11 @@
       <recent name="C:\Users\Daybreak\Desktop\frontend\carcarousel\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\licenta\carcarou\src\images\model" />
       <recent name="C:\project\licenta\carcarou\src\components" />
       <recent name="C:\project\licenta\carcarou\src\components\logged\customer" />
       <recent name="C:\project\licenta\carcarou\src\components\logged\images" />
       <recent name="C:\project\licenta\carcarou\src\components\home\images" />
-      <recent name="C:\project\licenta\carcarou\src\components\home" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -122,6 +120,7 @@
       <workItem from="1713028109083" duration="1810000" />
       <workItem from="1713352651078" duration="38000" />
       <workItem from="1713440273574" duration="3428000" />
+      <workItem from="1713444395035" duration="2307000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -368,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713442874749</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="small fix to signing in">
+      <created>1713444486264</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1713444486264</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +415,8 @@
     <MESSAGE value="Updated ui" />
     <MESSAGE value="Fixed issue where user would get logged out when refreshing in configurator" />
     <MESSAGE value="small ui improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="small ui improvements" />
+    <MESSAGE value="small fix to signing in" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fix to signing in" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
