@@ -10,6 +10,7 @@ interface Image {
     image_id: number;
     url: string[];
     colors:number[];
+    userid: number;
 }
 
 const ImageSlider = () => {
@@ -18,7 +19,8 @@ const ImageSlider = () => {
     const [image, setImage]: [Image, React.Dispatch<React.SetStateAction<Image>>] = useState({
         image_id: 0,
         url: ['error'],
-        colors:[0,0,0]
+        colors:[0,0,0],
+        userid: 12,
     });
 
     const location = useLocation();
@@ -57,6 +59,7 @@ const ImageSlider = () => {
     }, [make, model, year]);
 
     useEffect(()=>{
+        image.userid = 12;
         image.colors[0] = (currentColor.r);
         image.colors[1] = (currentColor.g);
         image.colors[2] = (currentColor.b);
@@ -66,7 +69,6 @@ const ImageSlider = () => {
 
     const handleOnColorChange = (color: ColorResult) => {
         setCurrentColor(color.rgb);
-
     }
     const handleConfirmColorClick = () => {
         const apiUrl = "http://127.0.0.1:7071/cars/newimage";
