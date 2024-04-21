@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Button from '@mui/material/Button';
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import {ColorResult, RGBColor, HuePicker} from "react-color";
+import {ColorResult, RGBColor, SketchPicker} from "react-color";
 import './ImageSlider.css';
 import {useLocation} from "react-router-dom";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -99,9 +99,10 @@ const ImageSlider = () => {
         image.url.length > 0 ? (
             <div className="image-slider-container">
                 <div className={"sketchpicker"}>
-                    <HuePicker
+                    <SketchPicker
                         color={currentColor}
                         onChangeComplete={handleOnColorChange}
+                        disableAlpha={true}
                     />
                     <Button color ="info" variant={"contained"} endIcon=<ArrowForwardIosIcon/> className={"confirm-color-btn"} onClick={handleConfirmColorClick}>
                         Confirm Color

@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="small fix to signing in">
-      <change afterPath="$PROJECT_DIR$/src/images/model/tiguan.png" afterDir="false" />
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="small change to user id">
+      <change afterPath="$PROJECT_DIR$/src/components/favorites/Favorites.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/favorites/Favorites.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/favorites/StickyHeadTable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/favorites/StickyHeadTable.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CarModel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarModel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +125,10 @@
       <workItem from="1713028109083" duration="1810000" />
       <workItem from="1713352651078" duration="38000" />
       <workItem from="1713440273574" duration="3428000" />
-      <workItem from="1713444395035" duration="2307000" />
+      <workItem from="1713444395035" duration="8643000" />
+      <workItem from="1713516788448" duration="695000" />
+      <workItem from="1713682666716" duration="1500000" />
+      <workItem from="1713690235865" duration="3694000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -374,7 +382,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713444486264</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="added new car model">
+      <created>1713450389853</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1713450389853</updated>
+    </task>
+    <task id="LOCAL-00038" summary="small change to user id">
+      <created>1713458862131</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1713458862131</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +414,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Components and UI change" />
     <MESSAGE value="models now display dynamically" />
     <MESSAGE value="small ui changes" />
     <MESSAGE value="Added react-router-dom and small bug fix" />
@@ -416,7 +437,9 @@
     <MESSAGE value="Fixed issue where user would get logged out when refreshing in configurator" />
     <MESSAGE value="small ui improvements" />
     <MESSAGE value="small fix to signing in" />
-    <option name="LAST_COMMIT_MESSAGE" value="small fix to signing in" />
+    <MESSAGE value="added new car model" />
+    <MESSAGE value="small change to user id" />
+    <option name="LAST_COMMIT_MESSAGE" value="small change to user id" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">

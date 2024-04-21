@@ -7,6 +7,7 @@ import HomeContainer from "./components/home/HomeContainer";
 import Header from "./components/Header";
 import Shop from "./components/logged/shop/Shop";
 import LoggedBody from "./components/logged/LoggedBody";
+import Favorites from "./components/favorites/Favorites";
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
@@ -26,6 +27,7 @@ function App() {
                   <Route path="/cars" element={<CarSelectionForm />} />
                   <Route path="/shop" element={<Shop />} />
                   <Route path="/cars/visualize/" element={<ImageSlider/>} />
+                  <Route path="/user/favorites/" element={<Favorites/>}/>
               </Routes>
           </div>
       </Router>
