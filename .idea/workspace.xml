@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="small change to user id">
-      <change afterPath="$PROJECT_DIR$/src/components/favorites/Favorites.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/favorites/Favorites.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/favorites/StickyHeadTable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/favorites/StickyHeadTable.tsx" afterDir="false" />
+    <list default="true" id="8671ef68-1030-480c-bf24-d800f7a123a1" name="Changes" comment="added small incomplete feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ImageSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CarLogos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarLogos.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/DialogComp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/DialogComp.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -128,7 +124,12 @@
       <workItem from="1713444395035" duration="8643000" />
       <workItem from="1713516788448" duration="695000" />
       <workItem from="1713682666716" duration="1500000" />
-      <workItem from="1713690235865" duration="3694000" />
+      <workItem from="1713690235865" duration="4243000" />
+      <workItem from="1718193158463" duration="1821000" />
+      <workItem from="1718276888244" duration="1697000" />
+      <workItem from="1718363522133" duration="5907000" />
+      <workItem from="1719040516991" duration="381000" />
+      <workItem from="1719399900654" duration="1281000" />
     </task>
     <task id="LOCAL-00001" summary="Components and UI change">
       <created>1703692819566</created>
@@ -396,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713458862131</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="added small incomplete feature">
+      <created>1713722578141</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1713722578141</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +422,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="models now display dynamically" />
     <MESSAGE value="small ui changes" />
     <MESSAGE value="Added react-router-dom and small bug fix" />
     <MESSAGE value="added color-picker" />
@@ -439,7 +446,8 @@
     <MESSAGE value="small fix to signing in" />
     <MESSAGE value="added new car model" />
     <MESSAGE value="small change to user id" />
-    <option name="LAST_COMMIT_MESSAGE" value="small change to user id" />
+    <MESSAGE value="added small incomplete feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="added small incomplete feature" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">

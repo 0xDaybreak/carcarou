@@ -16,7 +16,6 @@ function App() {
         setIsLoggedIn(true);
     };
 
-
     return (
       <Router >
           <div className="form-container">

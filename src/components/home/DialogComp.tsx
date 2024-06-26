@@ -8,6 +8,7 @@ interface DialogCompProps {
 }
 
 const DialogComp: React.FC<DialogCompProps> = (props) => {
+    const [isSuccessSignUp, setSucessSignUp] = useState<boolean>(false);
     const [user, setUser] = useState({
         id: 0,
         email: "",
@@ -42,7 +43,7 @@ const DialogComp: React.FC<DialogCompProps> = (props) => {
                 return response.json();
             })
             .then(() => {
-                // Handle successful response
+                setSucessSignUp(true);
             })
             .catch(error => {
                 console.error("Error:", error);
@@ -50,53 +51,67 @@ const DialogComp: React.FC<DialogCompProps> = (props) => {
     };
 
     return (
-        <Dialog open={props.isSignUpOpen} onClose={props.onClick} className={"custom-dialog-paper"}>
-            <DialogTitle className={"custom-dialog-content"}>Sign Up</DialogTitle>
-            <DialogContent className={"custom-dialog-content"}>
-                <TextField
-                    autoFocus
-                    margin="dense"
-                    label="First Name"
-                    type="text"
-                    fullWidth
-                    name="firstname"
-                    value={user.firstname}
-                    onChange={handleChange}
-                />
-                <TextField
-                    margin="dense"
-                    label="Last Name"
-                    type="text"
-                    fullWidth
-                    name="lastname"
-                    value={user.lastname}
-                    onChange={handleChange}
-                />
-                <TextField
-                    margin="dense"
-                    label="Email Address"
-                    type="email"
-                    fullWidth
-                    name="email"
-                    value={user.email}
-                    onChange={handleChange}
-                />
-                <TextField
-                    margin="dense"
-                    label="Password"
-                    type="password"
-                    fullWidth
-                    name="password_hash"
-                    value={user.password_hash}
-                    onChange={handleChange}
-                />
-            </DialogContent>
-            <DialogActions className={"custom-dialog-content"}>
-                <Button onClick={props.onClick} color="secondary" className={"cancel-btn"}>Cancel</Button>
-                <Button onClick={handleConfirmSignUpClick} color="primary" className={"sign-up-btn"}>Sign Up</Button>
-            </DialogActions>
-        </Dialog>
+        <>
+            <Dialog open={props.isSignUpOpen && !isSuccessSignUp} onClose={props.onClick} className={"custom-dialog-paper"}>
+                <DialogTitle className={"custom-dialog-content"}>Sign Up</DialogTitle>
+                <DialogContent className={"custom-dialog-content"}>
+                    <TextField
+                        autoFocus
+                        margin="dense"
+                        label="First Name"
+                        type="text"
+                        fullWidth
+                        name="firstname"
+                        value={user.firstname}
+                        onChange={handleChange}
+                    />
+                    <TextField
+                        margin="dense"
+                        label="Last Name"
+                        type="text"
+                        fullWidth
+                        name="lastname"
+                        value={user.lastname}
+                        onChange={handleChange}
+                    />
+                    <TextField
+                        margin="dense"
+                        label="Email Address"
+                        type="email"
+                        fullWidth
+                        name="email"
+                        value={user.email}
+                        onChange={handleChange}
+                    />
+                    <TextField
+                        margin="dense"
+                        label="Password"
+                        type="password"
+                        fullWidth
+                        name="password_hash"
+                        value={user.password_hash}
+                        onChange={handleChange}
+                    />
+                </DialogContent>
+                <DialogActions className={"custom-dialog-content"}>
+                    <Button onClick={props.onClick} color="secondary" className={"cancel-btn"}>Cancel</Button>
+                    <Button onClick={handleConfirmSignUpClick} color="primary" className={"sign-up-btn"}>Sign Up</Button>
+                </DialogActions>
+            </Dialog>
+
+            <Dialog open={isSuccessSignUp} onClose={() => setSucessSignUp(false)} className={"custom-dialog-paper"}>
+                <DialogTitle className={"custom-dialog-content"}>Success</DialogTitle>
+                <DialogContent className={"custom-dialog-content"}>
+                    <p>Sign up was successful!</p>
+                </DialogContent>
+                <DialogActions className={"custom-dialog-content"}>
+                    <Button onClick={() => { setSucessSignUp(false); props.onClick(); }} color="primary">Close</Button>
+                </DialogActions>
+            </Dialog>
+        </>
     );
 }
 
 export default DialogComp;
+
+
